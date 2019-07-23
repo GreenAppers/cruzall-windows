@@ -3,6 +3,7 @@ image: Visual Studio 2017
 platform: x64
 
 install:
+  - git submodule update --init --recursive
   - git clone -b master https://github.com/flutter/flutter.git %APPVEYOR_BUILD_FOLDER%\..\flutter
 
 build_script:
