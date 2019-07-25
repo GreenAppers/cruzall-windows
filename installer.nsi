@@ -1,5 +1,5 @@
 Name "Cruzall"
-OutFile "Cruzall-installer.exe"
+OutFile "Cruzall-x64-installer.exe"
 InstallDir $PROGRAMFILES\GreenAppers\Cruzall
 
 Page directory
