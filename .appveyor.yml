@@ -25,13 +25,16 @@ on_success:
 on_failure:
   - echo Failure
 
+artifacts:
+  - path: Cruzall-x64-installer.exe
+    name: Cruzall-x64-installer
+
 deploy:
-  release: Cruzall-v$(appveyor_build_version)
-  description: 'Cruzall: HD cruzbit wallet'
+  description: "Cruzall: HD cruzbit wallet"
   provider: GitHub
   auth_token:
     secure: v63vqyGOnTzYRb+8OaYranlVePalCI8/8WTg2jbnY/TJci2wrTa0nmbj7nK31ZQv
-  artifact: Cruzall-x64-installer.exe
+  artifact: Cruzall-x64-installer
   draft: false
   prerelease: false
   on:
