@@ -6,6 +6,8 @@
 !define MUI_HEADERIMAGE_BITMAP ".\logo.bmp"
 !define MUI_HEADERIMAGE_RIGHT
 
+!insertmacro MUI_LANGUAGE "English"
+
 Function .onInit
 	${If} ${RunningX64}
 	${else}
