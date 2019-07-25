@@ -10,8 +10,9 @@ build_script:
   - set "PATH=%APPVEYOR_BUILD_FOLDER%\..\flutter\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\;%PATH%"
   - set "ENABLE_FLUTTER_DESKTOP=true"
   - ps: cd "$env:APPVEYOR_BUILD_FOLDER\cruzall"
-  - ps: Copy-Item "..\cruzall-desktop\example\windows" -Destination "$env:APPVEYOR_BUILD_FOLDER\cruzall\windows" -Recurse
-  - ps: Copy-Item "desktop\pubspec.*" -Destination "$env:APPVEYOR_BUILD_FOLDER\cruzall" -force
+  - ps: Copy-Item "..\cruzall-desktop\example\windows" -Destination ".\windows" -Recurse
+  - ps: Copy-Item "desktop\pubspec.*" -Destination "." -force
+  - ps: Copy-Item "desktop\main.dart" -Destination ".\lib\main.dart" -force
   - flutter packages get
   - flutter build -v windows --release
   - ps: cd ..
