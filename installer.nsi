@@ -1,23 +1,22 @@
 !include x64.nsh
 !include "MUI2.nsh"
 
-!define MUI_ICON "app.ico"
-!define MUI_HEADERIMAGE
-!define MUI_HEADERIMAGE_BITMAP "logo.bmp"
+!define MUI_ICON ".\app.ico"
+!define MUI_HEADERIMAG
+!define MUI_HEADERIMAGE_BITMAP ".\logo.bmp"
 !define MUI_HEADERIMAGE_RIGHT
-
-Name "Cruzall"
-OutFile "Cruzall-x64-installer.exe"
-InstallDir $PROGRAMFILES\GreenAppers\Cruzall
 
 Function .onInit
 	${If} ${RunningX64}
-	${EnableX64FSRedirection}
 	${else}
 	MessageBox MB_OK "Sorry this application runs only on x64 machines"
 	Abort
 	${EndIf}
 FunctionEnd
+
+Name "Cruzall"
+OutFile "Cruzall-x64-installer.exe"
+InstallDir $PROGRAMFILES64\GreenAppers\Cruzall
 
 Page directory
 Page instfiles
