@@ -16,3 +16,11 @@ build_script:
   - flutter build -v windows --release
   - ps: cd ..
   - makensis installer.nsi
+
+on_success:
+  - echo Success
+  - dir Cruzall-installer.exe
+  - CertUtil -hashfile Cruzall-installer.exe md5
+
+on_failure:
+  - echo Failure

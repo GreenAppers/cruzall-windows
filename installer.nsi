@@ -8,7 +8,7 @@ Section "";
 
 RmDir /r "$INSTDIR"
 SetOutPath "$INSTDIR"
-File /nonfatal /a /r ".\cruzall\build\windows\x64\Release\Runner\"
+File /a /r ".\cruzall\build\windows\x64\Release\Runner\"
 
 SetOutPath "$INSTDIR"
 CreateDirectory "$SMPROGRAMS\GreenAppers"
