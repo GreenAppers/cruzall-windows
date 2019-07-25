@@ -13,4 +13,5 @@ build_script:
   - ps: Copy-Item "..\cruzall-desktop\example\windows" -Destination "$env:APPVEYOR_BUILD_FOLDER\cruzall\windows" -Recurse
   - ps: Copy-Item "desktop\pubspec.*" -Destination "$env:APPVEYOR_BUILD_FOLDER\cruzall" -force
   - flutter packages get
-  - flutter build -v windows --debug
+  - flutter build -v windows --release
+  - ps: Get-ChildItem -Recurse
