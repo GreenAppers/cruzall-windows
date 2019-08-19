@@ -29,6 +29,10 @@ SetOutPath "$INSTDIR"
 File /a /r ".\cruzall\build\windows\x64\Release\Runner\"
 File ".\vc_redist.x64.exe" 
 
+SetOutPath "$INSTDIR\lib\src\backends\windows"
+File ".\clippy\copy.exe"
+File ".\clippy\paste.exe"
+
 SetOutPath "$INSTDIR"
 createShortCut "$SMPROGRAMS\Cruzall.lnk" "$INSTDIR\Cruzall.exe"
 
