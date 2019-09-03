@@ -1,6 +1,6 @@
-## Cruzall for Windows 1.0.19 [![Build status](https://ci.appveyor.com/api/projects/status/4yvp2a2b412pyrca?svg=true)](https://ci.appveyor.com/project/GreenAppers/cruzall-windows)
+## Cruzall for Windows 1.1.0 [![Build status](https://ci.appveyor.com/api/projects/status/4yvp2a2b412pyrca?svg=true)](https://ci.appveyor.com/project/GreenAppers/cruzall-windows)
 <img width=128 src="assets/cruzbit.png" /> <img src="assets/icon.png" /><br/> See [parent project](https://github.com/GreenAppers/cruzall)
-<br/><br/><img width=300 src="assets/en/screenshot1.png" /> <img width=300 src="assets/en/screenshot2.png" />
+<br/><br/><img width=300 src="assets/en/screenshot1.png" /> <img width=300 src="assets/en/screenshot2.png" /> <img width=300 src="assets/en/screenshot3.png" /> <img width=300 src="assets/en/screenshot4.png" />
 
 ## Build
 Follow the same procedure as [the continuous integration](https://github.com/GreenAppers/cruzall-windows/blob/master/.appveyor.yml)
